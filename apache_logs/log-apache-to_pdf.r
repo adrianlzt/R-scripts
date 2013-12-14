@@ -12,6 +12,8 @@
 # Gracias a http://data-experience.blogspot.de/
 #
 
+cat("Puede tarda bastante si el fichero a leer es muy grande\nEn mi ordenador, menos de 1' para 100MB\n")
+
 # Cargo libreria necesaria
 library(treemap)
 

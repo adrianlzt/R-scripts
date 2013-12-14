@@ -12,6 +12,8 @@
 # Gracias a http://data-experience.blogspot.de/
 #
 
+cat("Puede tarda bastante si el fichero a leer es muy grande\nEn mi ordenador, menos de 1' para 100MB\n")
+
 # Para mostrar ventanas y mantenerlas abiertas hasta presionar una tecla
 library(tcltk)
 x11()
@@ -32,7 +34,7 @@ colnames(ac)=c("host",NA,NA,"date","timezone","request","status","bytes","url","
 ac <- ac[c("host","date","request","status","bytes","url","browser")]
 
 # Convertir la fecha, mirar date.md
-Sys.setlocale("LC_TIME", "C") 
+NUL <- Sys.setlocale("LC_TIME", "C") 
 ac$date <- strptime(ac$date,format('[%d/%b/%Y:%H:%M:%S'))
 
 # Campo para poder pintar el treemap
