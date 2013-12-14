@@ -14,7 +14,7 @@ exec <- paste(c("ls -l --time-style=+%Y-%m-%d:%H:%M:%S",args),collapse=' ')
 ls <- system(exec, intern=T,ignore.stderr=T)
 
 # Quito las cabeceras de ls (total y nombre del directorio, si se pasa mas de uno)
-ls <- grep('[d-]{1}.*',ls,value=T)
+ls <- grep('^[d-]{1}.*',ls,value=T)
 
 # Convierto 'ls' en un date.frame
 dfls <- read.table(textConnection(ls))
