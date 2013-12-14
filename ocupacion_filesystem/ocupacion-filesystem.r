@@ -1,6 +1,10 @@
 # Cojo los parametros
 args <- commandArgs(trailingOnly = TRUE)
 
+# Para mostrar ventanas y mantenerlas abiertas hasta presionar una tecla
+library(tcltk)
+x11()
+
 # Cargo las librerias necesarias
 library(treemap)
 library(tools)
@@ -25,5 +29,9 @@ dfls$date <- strptime(dfls$date,format('%Y-%m-%d:%H:%M:%S'))
 dfls$ext <- file_ext(dfls$file)
 
 # Abro el navegador para ver el tree map
-itreemap(dfls,index="file",vSize="size")
+# itreemap(dfls,index="file",vSize="size") # no funciona con Rscript
+treemap(dfls,index="file",vSize="size")
 
+# Mantener abiertas las ventanas hasta presionar una tecla
+prompt  <- "Pulsar OK para cerras las ventanas"
+capture <- tk_messageBox(message = prompt)

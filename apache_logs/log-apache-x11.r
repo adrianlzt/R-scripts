@@ -68,4 +68,4 @@ treemap(ac, index="host", vSize='count',title="Clientes")
 
 # Mantener abiertas las ventanas hasta presionar una tecla
 prompt  <- "Pulsar OK para cerras las ventanas"
-capture <- tk_messageBox(message = prompt, detail = extra)
+capture <- tk_messageBox(message = prompt)
