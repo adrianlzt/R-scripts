@@ -12,7 +12,7 @@
 # Gracias a http://data-experience.blogspot.de/
 #
 
-cat("Puede tarda bastante si el fichero a leer es muy grande\nEn mi ordenador, menos de 1' para 100MB\n")
+cat('Puede tardar bastante si el fichero a leer es muy grande.\nEn mi core i3, 40" para 130MB.\n')
 
 # Cargo libreria necesaria
 library(treemap)

@@ -11,8 +11,10 @@
 #
 # Gracias a http://data-experience.blogspot.de/
 #
+# ToDo: sigue escribiendo un fichero .pdf
+#
 
-cat("Puede tarda bastante si el fichero a leer es muy grande\nEn mi ordenador, menos de 1' para 100MB\n")
+cat('Puede tardar bastante si el fichero a leer es muy grande.\nEn mi core i3, 40" para 130MB.\n')
 
 # Para mostrar ventanas y mantenerlas abiertas hasta presionar una tecla
 library(tcltk)
