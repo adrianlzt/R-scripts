@@ -1,0 +1,4 @@
+http://redbeardtechnologies.wordpress.com/2013/08/05/using-r-and-apache-module-mod_log_firstbyte-to-find-the-performance-bottlenecks/?relatedposts_exclude=406
+http://androidyou.blogspot.com.es/2012/05/how-to-using-r-to-analysis-iis-logs.html
+http://www.r-bloggers.com/log-file-analysis-with-r/
+http://stackoverflow.com/questions/5664997/logfile-analysis-in-r
